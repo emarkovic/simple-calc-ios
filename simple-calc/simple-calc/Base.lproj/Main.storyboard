@@ -231,6 +231,9 @@
                                 <state key="normal" title="History">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="historyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZuP-BI-61M"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-mh-LdJ">
                                 <rect key="frame" x="21" y="60" width="333" height="94"/>

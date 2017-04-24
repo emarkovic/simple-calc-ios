@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     var nums = [0]
     var isTyping = false
     var operation = ""
+    var history = [String]()
     
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -31,7 +32,6 @@ class ViewController: UIViewController {
         } else {
             nums.append(Int(self.displayLabel.text!)!)
         }
-        print("\(nums)")
         
     }
     
@@ -63,60 +63,95 @@ class ViewController: UIViewController {
         var error = ""
         isTyping = false;
         let firstNum = nums[0]
+        var opStr = ""
+        
         let secondNum: Int?
         if nums.count >= 2 {
             secondNum = nums[1]
         } else {
             secondNum = 0
         }
-        print("\(nums)")
         
         if operation == "" {
             value = firstNum
         } else {
             switch operation {
             case "mod":
+                opStr = "%"
+                
                 if secondNum == 0 {
                     value = firstNum
                 } else {
                     var num = Double(firstNum) / Double(secondNum!)
                     num = num - Double(firstNum / secondNum!)
-                    num = num * Double(secondNum!)
-                    value = Int(num)
+                    value = Int(num * Double(secondNum!))
                 }
             case "div":
+                opStr = "/"
+                
                 if secondNum! == 0 {
                     error = "Error"
                 } else {
                     value = firstNum / secondNum!
                 }
             case "mult":
+                opStr = "x"
+                
                 value = firstNum * secondNum!
             case "sub":
+                opStr = "-"
+                
                 value = firstNum - secondNum!
             case "add":
+                opStr = "+"
+                
                 value = firstNum + secondNum!
             case "avg":
+                opStr = "avg"
+                
                 var sum = 0;
                 for num in nums {
                     sum += num
                 }
                 value = sum / nums.count
             case "count":
+                opStr = "cnt"
+                
                 value = nums.count
             default:
                 value = 0
             }
         }
+        
         if error != "" {
             self.displayLabel.text = error
+            createHistString(opStr, error)
             nums = [0]
         } else {
             self.displayLabel.text = "\(value!)"
+            createHistString(opStr, "\(value!)")
             nums = [value!]
         }
         operation = ""
+        opStr = ""
     }
+    
+    func createHistString(_ opString: String, _ value: String) {
+        var histString = ""
+        for (index, num) in nums.enumerated() {
+            histString += "\(num) ";
+            if index != nums.count - 1 {
+                histString += opString + " ";
+            }
+        }
+        histString += "= " + value
+        history.append(histString)
+    }
+    
+    @IBAction func historyTapped(_ sender: Any) {
+        print(history)
+    }
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()
