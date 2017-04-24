@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,16 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-mh-LdJ">
-                                <rect key="frame" x="16" y="37" width="343" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eid-mh-LdJ">
+                                <rect key="frame" x="21" y="25" width="333" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="dmp-ec-p91"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etr-Fk-Fxs">
-                                <rect key="frame" x="47" y="191" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etr-Fk-Fxs">
+                                <rect key="frame" x="21" y="186.5" width="80" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="7">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,9 +41,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWg-BJ-LTO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feC-jW-2Le">
-                                <rect key="frame" x="116" y="191" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feC-jW-2Le">
+                                <rect key="frame" x="106" y="186.5" width="79" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="8">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,9 +51,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmI-a1-ogq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-SO-Rlp">
-                                <rect key="frame" x="185" y="191" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-SO-Rlp">
+                                <rect key="frame" x="190" y="186.5" width="80" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="9">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,9 +61,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFG-GT-BlW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-Zl-1gR">
-                                <rect key="frame" x="47" y="237" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jov-Zl-1gR">
+                                <rect key="frame" x="21" y="306" width="80" height="116"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="4">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,9 +71,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2I-N7-Who"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-9A-Ub8">
-                                <rect key="frame" x="116" y="237" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-9A-Ub8">
+                                <rect key="frame" x="106" y="306" width="79" height="116"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="5">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -83,9 +81,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzh-3T-iD0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-VQ-PQc">
-                                <rect key="frame" x="185" y="237" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-VQ-PQc">
+                                <rect key="frame" x="190" y="306" width="80" height="116"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="6">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,9 +91,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKw-L2-obJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-Fp-NPq">
-                                <rect key="frame" x="47" y="283" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP3-Fp-NPq">
+                                <rect key="frame" x="21" y="427" width="80" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,9 +101,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P1G-CP-cwb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNf-FN-Ac2">
-                                <rect key="frame" x="116" y="283" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNf-FN-Ac2">
+                                <rect key="frame" x="106" y="427" width="79" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="2">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,9 +111,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csB-IK-hqx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85h-bA-qO1">
-                                <rect key="frame" x="185" y="283" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85h-bA-qO1">
+                                <rect key="frame" x="190" y="427" width="80" height="114.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="3">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -127,9 +121,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOm-l5-fA8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAX-KF-WTe">
-                                <rect key="frame" x="47" y="329" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAX-KF-WTe">
+                                <rect key="frame" x="21" y="546.5" width="80" height="115.5"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="0">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,9 +131,8 @@
                                     <action selector="numTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3F-wA-qIs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAQ-L5-NHv">
-                                <rect key="frame" x="254" y="145" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAQ-L5-NHv">
+                                <rect key="frame" x="275" y="66" width="79" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="mult">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -149,9 +141,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bdz-bT-t9P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFN-Ug-rBW">
-                                <rect key="frame" x="254" y="191" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFN-Ug-rBW">
+                                <rect key="frame" x="275" y="186.5" width="79" height="114.5"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="sub">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -160,9 +151,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9P-Gx-Xen"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocY-eh-HIT">
-                                <rect key="frame" x="254" y="237" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocY-eh-HIT">
+                                <rect key="frame" x="275" y="306" width="79" height="116"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -171,9 +161,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWR-Aj-QSR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9n-95-Iyb">
-                                <rect key="frame" x="185" y="146" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9n-95-Iyb">
+                                <rect key="frame" x="190" y="66" width="80" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="div">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,9 +171,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWa-XF-6tq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m7-Cf-sMg">
-                                <rect key="frame" x="116" y="146" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m7-Cf-sMg">
+                                <rect key="frame" x="106" y="66" width="79" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="mod">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -193,9 +181,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="38d-aA-hOM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M5-Ow-P9W">
-                                <rect key="frame" x="47" y="145" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M5-Ow-P9W">
+                                <rect key="frame" x="21" y="66" width="80" height="115.5"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -204,9 +191,8 @@
                                     <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adz-JP-zs0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-Ua-80s">
-                                <rect key="frame" x="116" y="329" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTM-Ua-80s">
+                                <rect key="frame" x="106" y="546.5" width="79" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -215,9 +201,8 @@
                                     <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0uv-4W-izD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoM-3r-bHy">
-                                <rect key="frame" x="185" y="329" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoM-3r-bHy">
+                                <rect key="frame" x="190" y="546.5" width="80" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="avg">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -226,9 +211,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lcj-aT-wqF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-p2-xOq">
-                                <rect key="frame" x="254" y="283" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-p2-xOq">
+                                <rect key="frame" x="275" y="427" width="79" height="114.5"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="count">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -237,9 +221,8 @@
                                     <action selector="calcTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mz-Ir-K8M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nze-Ed-qCC">
-                                <rect key="frame" x="254" y="329" width="64" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nze-Ed-qCC">
+                                <rect key="frame" x="275" y="546.5" width="79" height="115.5"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="fact">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -250,6 +233,100 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sP3-Fp-NPq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="0cV-cu-E9Q"/>
+                            <constraint firstItem="DAX-KF-WTe" firstAttribute="top" secondItem="sP3-Fp-NPq" secondAttribute="bottom" constant="5" id="0mn-od-xkU"/>
+                            <constraint firstItem="IFN-Ug-rBW" firstAttribute="top" secondItem="XAQ-L5-NHv" secondAttribute="bottom" constant="5" id="1AL-tM-d7L"/>
+                            <constraint firstItem="feC-jW-2Le" firstAttribute="leading" secondItem="Etr-Fk-Fxs" secondAttribute="trailing" constant="5" id="1TQ-0N-ksM"/>
+                            <constraint firstItem="nze-Ed-qCC" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="1dG-Or-2ia"/>
+                            <constraint firstItem="uTM-Ua-80s" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="1de-3W-3ZZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nze-Ed-qCC" secondAttribute="trailing" constant="5" id="2Iz-gp-f1B"/>
+                            <constraint firstItem="Rq6-SO-Rlp" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="2Ms-iT-dAb"/>
+                            <constraint firstItem="Rq6-SO-Rlp" firstAttribute="leading" secondItem="feC-jW-2Le" secondAttribute="trailing" constant="5" id="2Tn-7M-unR"/>
+                            <constraint firstItem="Etr-Fk-Fxs" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="3vL-pL-7eA"/>
+                            <constraint firstItem="85h-bA-qO1" firstAttribute="leading" secondItem="TNf-FN-Ac2" secondAttribute="trailing" constant="5" id="6Db-a6-7bE"/>
+                            <constraint firstItem="feC-jW-2Le" firstAttribute="top" secondItem="6m7-Cf-sMg" secondAttribute="bottom" constant="5" id="6Qi-ib-CCm"/>
+                            <constraint firstItem="ocY-eh-HIT" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="6vW-LH-2nD"/>
+                            <constraint firstItem="AoM-3r-bHy" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="7UL-lJ-H3C"/>
+                            <constraint firstItem="nze-Ed-qCC" firstAttribute="top" secondItem="FXT-p2-xOq" secondAttribute="bottom" constant="5" id="7br-0m-Yza"/>
+                            <constraint firstItem="K9n-95-Iyb" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="7g6-NS-7P1"/>
+                            <constraint firstItem="85h-bA-qO1" firstAttribute="top" secondItem="eIa-VQ-PQc" secondAttribute="bottom" constant="5" id="92I-i0-irQ"/>
+                            <constraint firstItem="K9n-95-Iyb" firstAttribute="leading" secondItem="6m7-Cf-sMg" secondAttribute="trailing" constant="5" id="9Jh-5i-f0t"/>
+                            <constraint firstItem="FXT-p2-xOq" firstAttribute="top" secondItem="ocY-eh-HIT" secondAttribute="bottom" constant="5" id="B0j-3c-XcC"/>
+                            <constraint firstItem="K9n-95-Iyb" firstAttribute="top" secondItem="Eid-mh-LdJ" secondAttribute="bottom" constant="5" id="DGU-TS-FMG"/>
+                            <constraint firstItem="IFN-Ug-rBW" firstAttribute="leading" secondItem="Rq6-SO-Rlp" secondAttribute="trailing" constant="5" id="Dwz-Mj-vIG"/>
+                            <constraint firstItem="DAX-KF-WTe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="EAU-jI-69I"/>
+                            <constraint firstItem="feC-jW-2Le" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="ELg-gN-BAM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DAX-KF-WTe" secondAttribute="bottom" constant="5" id="FES-6U-p3u"/>
+                            <constraint firstItem="flS-9A-Ub8" firstAttribute="leading" secondItem="Jov-Zl-1gR" secondAttribute="trailing" constant="5" id="FZM-c7-ixZ"/>
+                            <constraint firstItem="FXT-p2-xOq" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="Hi9-L7-Bxl"/>
+                            <constraint firstItem="ocY-eh-HIT" firstAttribute="leading" secondItem="eIa-VQ-PQc" secondAttribute="trailing" constant="5" id="KEa-w0-qix"/>
+                            <constraint firstItem="flS-9A-Ub8" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="Kba-fv-jmU"/>
+                            <constraint firstItem="6m7-Cf-sMg" firstAttribute="leading" secondItem="5M5-Ow-P9W" secondAttribute="trailing" constant="5" id="L0U-pX-owD"/>
+                            <constraint firstItem="TNf-FN-Ac2" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="L9c-h7-bAc"/>
+                            <constraint firstItem="6m7-Cf-sMg" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="Ll5-Qz-zyq"/>
+                            <constraint firstItem="TNf-FN-Ac2" firstAttribute="top" secondItem="flS-9A-Ub8" secondAttribute="bottom" constant="5" id="LrR-LS-mm4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FXT-p2-xOq" secondAttribute="trailing" constant="5" id="Md6-Xa-dGR"/>
+                            <constraint firstItem="sP3-Fp-NPq" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="Mlr-yo-w99"/>
+                            <constraint firstItem="ocY-eh-HIT" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="Mm6-IJ-In7"/>
+                            <constraint firstItem="uTM-Ua-80s" firstAttribute="top" secondItem="TNf-FN-Ac2" secondAttribute="bottom" constant="5" id="Mvb-ju-heP"/>
+                            <constraint firstItem="Etr-Fk-Fxs" firstAttribute="top" secondItem="5M5-Ow-P9W" secondAttribute="bottom" constant="5" id="Ng0-LT-ugx"/>
+                            <constraint firstItem="6m7-Cf-sMg" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="Ns2-ay-cGq"/>
+                            <constraint firstItem="eIa-VQ-PQc" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="O5N-ic-APL"/>
+                            <constraint firstItem="DAX-KF-WTe" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="OqS-PI-lcS"/>
+                            <constraint firstItem="nze-Ed-qCC" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="OxO-k2-TW9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AoM-3r-bHy" secondAttribute="bottom" constant="5" id="POs-56-ER5"/>
+                            <constraint firstItem="FXT-p2-xOq" firstAttribute="leading" secondItem="85h-bA-qO1" secondAttribute="trailing" constant="5" id="Qpa-lz-9PS"/>
+                            <constraint firstItem="85h-bA-qO1" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="R1q-6Z-t62"/>
+                            <constraint firstItem="sP3-Fp-NPq" firstAttribute="top" secondItem="Jov-Zl-1gR" secondAttribute="bottom" constant="5" id="RRC-vX-15v"/>
+                            <constraint firstAttribute="trailing" secondItem="Eid-mh-LdJ" secondAttribute="trailing" constant="21" id="SH9-aJ-Bgd"/>
+                            <constraint firstItem="Jov-Zl-1gR" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="UD3-kG-IVj"/>
+                            <constraint firstItem="Rq6-SO-Rlp" firstAttribute="top" secondItem="K9n-95-Iyb" secondAttribute="bottom" constant="5" id="VLO-E6-hVd"/>
+                            <constraint firstItem="Eid-mh-LdJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="W62-U6-iIp"/>
+                            <constraint firstItem="flS-9A-Ub8" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="WP9-0z-7bo"/>
+                            <constraint firstItem="AoM-3r-bHy" firstAttribute="leading" secondItem="uTM-Ua-80s" secondAttribute="trailing" constant="5" id="WW9-TO-zvr"/>
+                            <constraint firstItem="DAX-KF-WTe" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="X56-LT-h6g"/>
+                            <constraint firstItem="85h-bA-qO1" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="XPd-O9-dAq"/>
+                            <constraint firstItem="FXT-p2-xOq" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="Y9H-FV-s0a"/>
+                            <constraint firstItem="uTM-Ua-80s" firstAttribute="leading" secondItem="DAX-KF-WTe" secondAttribute="trailing" constant="5" id="Yph-Nw-IfG"/>
+                            <constraint firstItem="Eid-mh-LdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="YrX-aq-MEQ"/>
+                            <constraint firstItem="6m7-Cf-sMg" firstAttribute="top" secondItem="Eid-mh-LdJ" secondAttribute="bottom" constant="5" id="Z88-mg-AZF"/>
+                            <constraint firstItem="IFN-Ug-rBW" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="Z9X-xq-DsZ"/>
+                            <constraint firstItem="eIa-VQ-PQc" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="aEs-sc-wdt"/>
+                            <constraint firstItem="eIa-VQ-PQc" firstAttribute="top" secondItem="Rq6-SO-Rlp" secondAttribute="bottom" constant="5" id="acT-Hs-rqU"/>
+                            <constraint firstItem="AoM-3r-bHy" firstAttribute="top" secondItem="85h-bA-qO1" secondAttribute="bottom" constant="5" id="ari-ge-erj"/>
+                            <constraint firstItem="TNf-FN-Ac2" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="bJc-qe-VmT"/>
+                            <constraint firstItem="XAQ-L5-NHv" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="bct-Bh-u37"/>
+                            <constraint firstItem="5M5-Ow-P9W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="cBS-xh-V2f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uTM-Ua-80s" secondAttribute="bottom" constant="5" id="cDs-i3-dge"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XAQ-L5-NHv" secondAttribute="trailing" constant="5" id="djV-YV-XBX"/>
+                            <constraint firstItem="XAQ-L5-NHv" firstAttribute="top" secondItem="Eid-mh-LdJ" secondAttribute="bottom" constant="5" id="eMa-NW-Msg"/>
+                            <constraint firstItem="XAQ-L5-NHv" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="eab-BZ-ePj"/>
+                            <constraint firstItem="5M5-Ow-P9W" firstAttribute="top" secondItem="Eid-mh-LdJ" secondAttribute="bottom" constant="5" id="enm-aP-oNw"/>
+                            <constraint firstItem="sP3-Fp-NPq" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="ffz-3J-bwb"/>
+                            <constraint firstItem="Eid-mh-LdJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="g6j-fV-FXh"/>
+                            <constraint firstItem="eIa-VQ-PQc" firstAttribute="leading" secondItem="flS-9A-Ub8" secondAttribute="trailing" constant="5" id="g7d-1T-ewh"/>
+                            <constraint firstItem="K9n-95-Iyb" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="gTs-4c-yTY"/>
+                            <constraint firstItem="flS-9A-Ub8" firstAttribute="top" secondItem="feC-jW-2Le" secondAttribute="bottom" constant="5" id="gyl-s8-WNo"/>
+                            <constraint firstItem="ocY-eh-HIT" firstAttribute="top" secondItem="IFN-Ug-rBW" secondAttribute="bottom" constant="5" id="iKj-hS-T2g"/>
+                            <constraint firstItem="Rq6-SO-Rlp" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="jPM-b9-SUB"/>
+                            <constraint firstItem="Eid-mh-LdJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="5" id="jgF-xb-KZX"/>
+                            <constraint firstItem="nze-Ed-qCC" firstAttribute="leading" secondItem="AoM-3r-bHy" secondAttribute="trailing" constant="5" id="ktN-aa-aPg"/>
+                            <constraint firstItem="TNf-FN-Ac2" firstAttribute="leading" secondItem="sP3-Fp-NPq" secondAttribute="trailing" constant="5" id="kv8-Um-vCV"/>
+                            <constraint firstItem="XAQ-L5-NHv" firstAttribute="leading" secondItem="K9n-95-Iyb" secondAttribute="trailing" constant="5" id="lXC-tc-SL6"/>
+                            <constraint firstItem="IFN-Ug-rBW" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="mQV-gN-kXs"/>
+                            <constraint firstItem="Jov-Zl-1gR" firstAttribute="top" secondItem="Etr-Fk-Fxs" secondAttribute="bottom" constant="5" id="mjv-10-iZc"/>
+                            <constraint firstItem="AoM-3r-bHy" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="oiu-HJ-BUA"/>
+                            <constraint firstItem="Jov-Zl-1gR" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="pIT-g3-6ht"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IFN-Ug-rBW" secondAttribute="trailing" constant="5" id="pZO-ZC-2Z8"/>
+                            <constraint firstItem="Etr-Fk-Fxs" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="rZF-sP-JR2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nze-Ed-qCC" secondAttribute="bottom" constant="5" id="sdK-nH-Pul"/>
+                            <constraint firstItem="feC-jW-2Le" firstAttribute="width" secondItem="5M5-Ow-P9W" secondAttribute="width" id="vQC-8X-C3R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ocY-eh-HIT" secondAttribute="trailing" constant="5" id="vu5-9I-TN9"/>
+                            <constraint firstItem="Jov-Zl-1gR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="w0S-A6-bkx"/>
+                            <constraint firstItem="Etr-Fk-Fxs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="ySc-08-Lbe"/>
+                            <constraint firstItem="uTM-Ua-80s" firstAttribute="height" secondItem="5M5-Ow-P9W" secondAttribute="height" id="zwS-nV-reU"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="displayLabel" destination="Eid-mh-LdJ" id="bZ9-AO-Me6"/>
