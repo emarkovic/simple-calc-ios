@@ -13,11 +13,22 @@ class HistoryViewController: UIViewController {
     var historyItems: [String]?
     var mainViewController: ViewController?
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if historyItems != nil {
+            for (index, item) in historyItems!.enumerated() {
+
+                let label = UILabel(frame: CGRect(x: 0, y: index * 26, width: 200, height: 21))
+                label.text = item
+                self.scrollView.addSubview(label)
+                
+            }
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

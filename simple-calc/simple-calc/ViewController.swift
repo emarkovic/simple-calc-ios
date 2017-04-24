@@ -153,7 +153,7 @@ class ViewController: UIViewController {
         let historyVC : HistoryViewController = mainSB.instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
         historyVC.historyItems = self.history
         historyVC.mainViewController = self
-                
+        
         self.present(historyVC, animated: true, completion: nil)
     }
     

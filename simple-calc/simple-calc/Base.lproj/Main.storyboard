@@ -453,6 +453,9 @@
                             <constraint firstItem="kDg-pD-1YC" firstAttribute="trailing" secondItem="Sp0-vD-Ex8" secondAttribute="trailingMargin" id="vcm-Zh-dEd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="9wg-pc-SYn" id="wgU-2Z-Efk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjJ-v5-tSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
