@@ -149,13 +149,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func historyTapped(_ sender: Any) {
-        print(history)
         let mainSB = UIStoryboard(name: "Main", bundle: nil)
         let historyVC : HistoryViewController = mainSB.instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
         historyVC.historyItems = self.history
-        vc.mainViewController = self
-        self.navigationController?.present(historyVC, animated: true, completion: nil)
+        historyVC.mainViewController = self
+                
+        self.present(historyVC, animated: true, completion: nil)
     }
+    
     
    
     override func viewDidLoad() {
