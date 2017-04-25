@@ -19,6 +19,8 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
         
         if historyItems != nil {
+            self.scrollView.contentSize = CGSize(width: 200, height: historyItems!.count * 26)
+            
             for (index, item) in historyItems!.enumerated() {
 
                 let label = UILabel(frame: CGRect(x: 0, y: index * 26, width: 200, height: 21))
