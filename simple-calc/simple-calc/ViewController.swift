@@ -147,14 +147,21 @@ class ViewController: UIViewController {
         histString += "= " + value
         history.append(histString)
     }
+
     
-    @IBAction func historyTapped(_ sender: Any) {
-        let mainSB = UIStoryboard(name: "Main", bundle: nil)
-        let historyVC : HistoryViewController = mainSB.instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
-        historyVC.historyItems = self.history
-        historyVC.mainViewController = self
-        
-        self.present(historyVC, animated: true, completion: nil)
+//    @IBAction func historyTapped(_ sender: Any) {
+//        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+//        let historyVC : HistoryViewController = mainSB.instantiateViewController(withIdentifier: "HistoryViewController") as! HistoryViewController
+//        historyVC.historyItems = self.history
+//        historyVC.mainViewController = self
+//
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "historyBtnSegue" {
+            let historyViewController: HistoryViewController = segue.destination as! HistoryViewController
+            historyViewController.historyItems = self.history
+        }
     }
     
     

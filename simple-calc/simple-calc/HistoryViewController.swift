@@ -17,7 +17,7 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if historyItems != nil {
             for (index, item) in historyItems!.enumerated() {
 
